@@ -33,9 +33,9 @@ def opcao1():
     
 
     print(f'\n\033[1;32mOrdenação do arquivo:{nome_arquivo}\033[m')
-    print(f'\033[1;37mTempo de Operação Insertion de {tamanho_arquivo}: {round(insert_end-insert_start, 3)}\033[m')
-    print(f'\033[1;37mTempo de Operação Merge de {tamanho_arquivo}: {round(merge_end-merge_start, 3)}\033[m')
-    print(f'\033[1;37mTempo de Operação Quick de {tamanho_arquivo}: {round(quick_end-quick_start, 3)}\033[m\n')
+    print(f'\033[1;37mTempo de Operação Insertion de {tamanho_arquivo}: \033[1;96m{round(insert_end-insert_start, 3)}\033[m\033[m')
+    print(f'\033[1;37mTempo de Operação Merge de {tamanho_arquivo}: \033[1;96m{round(merge_end-merge_start, 3)}\033[m\033[m')
+    print(f'\033[1;37mTempo de Operação Quick de {tamanho_arquivo}: \033[1;96m{round(quick_end-quick_start, 3)}\033[m\033[m\n')
 
     data = [round(quick_end-quick_start,3), round(merge_end-merge_start,3), round(insert_end-insert_start,3)]
     labels = ['Quicksort', 'Merge', 'Insertion']
@@ -102,9 +102,9 @@ def opcao2():
     data = []
     for Type in times:
         print(f'\n\033[1;32mOrdenação do arquivo:{Type[0]}\033[m')
-        print(f'Tempo de Operação {Type[2]} de {Type[1]-1}: {round(Type[4]-Type[3], 3)}')
-        print(f'Tempo de Operação {Type[5]} de {Type[1]-1}: {round(Type[7]-Type[6], 3)}')
-        print(f'Tempo de Operação {Type[8]} de {Type[1]-1}: {round(Type[10]-Type[9], 3)}\n')
+        print(f'\033[1;37mTempo de Operação {Type[2]} de {Type[1]-1}: \033[1;96m{round(Type[4]-Type[3], 3)}\033[m\033[m')
+        print(f'\033[1;37mTempo de Operação {Type[5]} de {Type[1]-1}: \033[1;96m{round(Type[7]-Type[6], 3)}\033[m\033[m')
+        print(f'\033[1;37mTempo de Operação {Type[8]} de {Type[1]-1}: \033[1;96m{round(Type[10]-Type[9], 3)}\033[m\033[m\n')
         auxdata = [Type[0],round(Type[4]-Type[3],3), round(Type[7]-Type[6],3), round(Type[10]-Type[9],3)]
         data.append(auxdata)   
     labels = [data[0][0],data[1][0],data[2][0]]
@@ -173,7 +173,7 @@ def opcao3():
     data = []
     for Type in times:
         print(f'\n\033[1;32mOrdenação do arquivo:{Type[0]}\033[m')
-        print(f'\033[1;37mTempo de Operação {Type[2]} de {Type[1]-1}: {round(Type[4]-Type[3], 3)}\033[m')
+        print(f'\033[1;37mTempo de Operação {Type[2]} de {Type[1]-1}: \033[1;96m{round(Type[4]-Type[3], 3)}\033[m\033[m')
         auxdata = [Type[0],round(Type[4]-Type[3],3)]
         data.append(auxdata)
 
@@ -220,7 +220,7 @@ def opcao4():
     data = []
     for Type in times:
         print(f'\n\033[1;32mOrdenação do arquivo:{Type[0]}\033[m')
-        print(f'\033[1;37mTempo de Operação {Type[2]} de {Type[1]-1}: {round(Type[4]-Type[3], 3)}\033[m')
+        print(f'\033[1;37mTempo de Operação {Type[2]} de {Type[1]-1}: \033[1;96m{round(Type[4]-Type[3], 3)}\033[m\033[m')
         auxdata = [Type[0],round(Type[4]-Type[3],3)]
         data.append(auxdata)
 
@@ -267,7 +267,7 @@ def opcao5():
     data = []
     for Type in times:
         print(f'\n\033[1;32mOrdenação do arquivo:{Type[0]}\033[m')
-        print(f'\033[1;37mTempo de Operação {Type[2]} de {Type[1]-1}: {round(Type[4]-Type[3], 3)}\033[m')
+        print(f'\033[1;37mTempo de Operação {Type[2]} de {Type[1]-1}: \033[1;96m{round(Type[4]-Type[3], 3)}\033[m\033[m')
         auxdata = [Type[0],round(Type[4]-Type[3],3)]
         data.append(auxdata)
 
