@@ -12,7 +12,7 @@ def leiaInt(msg):
             return n
 
 def linha(tam=60):
-    return '-' * tam
+    return '\033[1;91m-\033[m' * tam
 
 
 def inteface(txt):
@@ -22,11 +22,11 @@ def inteface(txt):
 
 
 def menu(lista):
-    inteface('\033[33mOperações que podem ser feitas na aplicação\033[m')
+    inteface('\033[1;93mOperações que podem ser feitas na aplicação\033[m')
     aux = 1
     for item in lista:
-        print(f'\033[32m{aux}- \033[34m{item}\033[m')
+        print(f'\033[32m{aux}- \033[36m{item}\033[m')
         aux += 1
     print(linha())
-    opc = leiaInt('Informe o Número da Operação que deseja realizar: ')
+    opc = leiaInt('\033[1;37mInforme o Número da Operação que deseja realizar: \033[m')
     return opc
