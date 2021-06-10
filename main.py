@@ -294,22 +294,22 @@ if __name__ == '__main__':
                 'Sair da Aplicação']
         operacao = menu(list)
         
-        if  operacao == '1':
+        if  operacao == 1:
             opcao1()
             
-        elif  operacao == '2':
+        elif  operacao == 2:
             opcao2()
         
-        elif  operacao == '3':
+        elif  operacao == 3:
             opcao3()
         
-        elif  operacao == '4':
+        elif  operacao == 4:
             opcao4()
         
-        elif  operacao == '5':
+        elif  operacao == 5:
             opcao5()
 
-        elif  operacao == '0':
+        elif  operacao == 6:
             print('Saindo da aplicação')
             break
             
