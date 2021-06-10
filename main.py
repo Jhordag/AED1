@@ -291,7 +291,7 @@ if __name__ == '__main__':
                 'Comparação dos 3 metodos de ordenção usando as 3 base de dados',   
                 'Comparação do InsertionSort com as 3 bases de dados',
                 'Comparação do MergeSort com as 3 bases de dados',
-                'Comparação do QuickSort com as 3 bases de dados'
+                'Comparação do QuickSort com as 3 bases de dados',
                 'Sair da Aplicação']
         operacao = menu(list)
         
